@@ -1,0 +1,42 @@
+{
+  "name": "no-more-timer-leaks",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts"
+  },
+  "files": [
+  "dist",
+  "README.md",
+  "LICENSE",
+  "index.js",
+  "index.d.ts"
+],
+  "keywords": [
+    "timer leak detector",
+    "javascript memory leaks",
+    "active timers",
+    "setTimeout leak",
+    "setInterval leak",
+    "detect duplicate timers",
+    "memory leak detection",
+    "tracking",
+    "debug timers",
+    "uncleared intervals",
+    "javascript debugging",
+    "browser timers",
+    "memory management",
+    "leaked timers",
+    "interval leak monitor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
