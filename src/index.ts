@@ -170,7 +170,16 @@ if (typeof window !== 'undefined' && process.env.NODE_ENV !== 'production') {
 
             navigator.clipboard.writeText(JSON.stringify(data, null, 2))
                 .then(() => console.info('📋 Timer report copied to clipboard!'))
-                .catch(err => console.warn('❌ Failed to copy timer report:', err));
+                .catch(err => {
+                    if (err instanceof DOMException && err.name === 'NotAllowedError') {
+                        console.warn(
+                            '📋 Copy failed: Clipboard access denied. ' +
+                            'Use the "📋 Copy Timer Report" button or call this from a user click.'
+                        );
+                    } else {
+                        console.warn('❌ Failed to copy timer report:', err);
+                    }
+                });
         },
     };
 
