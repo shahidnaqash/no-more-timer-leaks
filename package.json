@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --minify",
     "dev": "tsup src/index.ts --watch --format esm,cjs --dts"
   },
   "files": [
@@ -18,8 +18,8 @@
     "timer leak detector",
     "javascript memory leaks",
     "active timers",
-    "setTimeout leak",
-    "setInterval leak",
+    "setTimeout",
+    "setInterval",
     "detect duplicate timers",
     "memory leak detection",
     "tracking",
@@ -28,7 +28,6 @@
     "javascript debugging",
     "browser timers",
     "memory management",
-    "leaked timers",
     "interval leak monitor"
   ],
   "author": "",
