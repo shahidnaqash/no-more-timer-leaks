@@ -7,7 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "ESNext",
     "target": "ES6",
     // For nodejs:
     "lib": ["esnext","dom"],
@@ -38,6 +38,17 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+    "skipLibCheck": true, 
+    "moduleResolution": "node",  
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    ".vscode",
+    "tsup.config.ts",  
+    "**/*.config.ts",  
+    "**/*.stories.ts", 
+    "package.json"
+  ]
 }

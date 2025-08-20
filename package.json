@@ -1,19 +1,24 @@
 {
   "name": "no-more-timer-leaks",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --minify",
-    "dev": "tsup src/index.ts --watch --format esm,cjs --dts"
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "exports": {
+    "import": "./dist/index.js",   
+    "require": "./dist/index.cjs" 
   },
   "files": [
-  "dist",
-  "README.md",
-  "LICENSE",
-  "index.js",
-  "index.d.ts"
-],
+    "dist",
+    "README.md",
+    "LICENSE",
+    "index.js",
+    "index.d.ts"
+  ],
   "keywords": [
     "timer leak detector",
     "javascript memory leaks",
