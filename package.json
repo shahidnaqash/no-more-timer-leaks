@@ -8,33 +8,6 @@
     "build": "tsup",
     "dev": "tsup --watch"
   },
-  "exports": {
-    "import": "./dist/index.js",   
-    "require": "./dist/index.cjs" 
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE",
-    "index.js",
-    "index.d.ts"
-  ],
-  "keywords": [
-    "timer leak detector",
-    "javascript memory leaks",
-    "active timers",
-    "setTimeout",
-    "setInterval",
-    "detect duplicate timers",
-    "memory leak detection",
-    "tracking",
-    "debug timers",
-    "uncleared intervals",
-    "javascript debugging",
-    "browser timers",
-    "memory management",
-    "interval leak monitor"
-  ],
   "author": "",
   "license": "MIT",
   "description": "",
