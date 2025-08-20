@@ -16,7 +16,7 @@ Perfect for debugging SPAs, React components, or any JavaScript app using timers
 Install as a dev dependency:
 
 ```bash
-npm install timer-tracker --save-dev
+npm install no-more-timer-leaks --save-dev
 ```
 
 ## Usage 
